@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  post "/users", to: "users#create"
+  resources :users
+  post '/auth/login', to: 'authentication#login' 
 end
